@@ -1,4 +1,4 @@
-Deep Learning Project Class 
+Deep Learning Project 
 ==========================
 
 This project demonstrates a computer-aided diagnosis (CAD) system for a ChestX-ray dataset comprises 112,120 frontal-view X-ray images of 30,805 unique patients with the text-mined fourteen disease image labels. The initial approach was to directly feed the downsized X-ray images (28X28) into 3D Convolutional Neural Networks (CNNs) using two-layer inception model for multi-label classification, but this proved to be inadequate and result shows a significant overfitting. Instead, a modified binary dataset (disease and no-disease), allowing more efficient training and detection and more generalizability to other Lung diseases, was used to detection of disease from resized images. The 3D CNNs produced a total test set accuracy of 78% which includes 87% and 68% accuracy of true negative and true positive, respectively. Although the model is pretty light that can be performed even with multiple CPUs processor, the accuracy of results is acceptable, knowing that the false negative error is achieved by less than 13%.
